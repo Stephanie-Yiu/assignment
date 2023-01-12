@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;800&display=swap');
 /*font-family: 'Montserrat', sans-serif;*/
-
+:root {
+  --text-main-color: rgb(74, 74, 74);
+  --main-background-color: rgba(181, 181, 181, 0.79);
+  
+}
 html {
   font-family: 'Montserrat', sans-serif !important;
+  overflow-x: hidden;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  color: rgb(74, 74, 74) !important;
+  color: var(--text-main-color) !important;
+  font-weight: 200 !important;
 }
 
 @media (min-width: 768px) {
@@ -19,16 +25,85 @@ h4 {
   }
 }
 
+.part-1-btn {
+ 
+}
+
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 571px) { 
+  
+.part-2-side-bar-card-xs{
+  flex-direction: column !important;
+
+
+}
+
+.card-item /*part-2 cards*/{
+  margin-bottom: 64px !important;
+}
+
+.card-item div{
+  width: 100%  !important;
+}
+
+
+ }
+
+
+
+
+
+
 /* `lg` applies to medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) {
+
+  .part-1 div {
+    padding: 32px 16px !important;
+    height: fit-content !important;
+  }
+  
+.part-1 h1:nth-child(2){
+    
+    margin-top: 32px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .part-1-btn {
+    background-color: rgba(125, 125, 125, 0.929); !important;
+    color: white !important;
+    margin-bottom: 0px !important;
+  }
+
+  .part-2 div:nth-child(2){
+    width: 100% !important;
+    display: flex !important;
+  }
+.card-item /*part-2 cards*/{
+  margin-bottom: 64px !important;
+}
+
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 992px) {
+@media (min-width: 992px)  {
   .part-1 {
     padding: 32px 24px !important;
   }
   .part-1 div {
     padding: 24px !important;
+    height: 550px !important;
+  }
+  .part-1-btn {
+    background-color: var(--text-main-color) !important;
+    color: white !important;
+  }
+
+  .part-2-side-bar{
+    width: 40% !important;
   }
 }
