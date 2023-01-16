@@ -29,6 +29,10 @@ h4 {
  
 }
 
+.card-item:hover{
+  background-color: rgba(181, 181, 181, 0.79);
+}
+
 
 
 
@@ -84,7 +88,15 @@ h4 {
     display: flex !important;
   }
 .card-item /*part-2 cards*/{
-  margin-bottom: 64px !important;
+  margin-bottom: 32px !important;
+}
+
+
+.part-3 h1{
+  margin:32px 0 16px 0 !important;
+}
+.part-4 h1{
+  margin:32px 0 16px 0 !important;
 }
 
 }
@@ -106,4 +118,19 @@ h4 {
   .part-2-side-bar{
     width: 40% !important;
   }
+
+  .part-3-bg{
+    background-color: rgba(181, 181, 181, 0.79);
+  }
+
+ .video-part{
+  width:59%
+ }
+ .part-4{
+  padding:0 24px !important;
+
+  margin-bottom: 32px !important;
+ }
+
+ 
 }
